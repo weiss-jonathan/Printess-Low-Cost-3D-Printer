@@ -84,9 +84,9 @@
 #ifdef X_STALL_SENSITIVITY
   #define X_STOP_PIN                  X_DIAG_PIN
   #if X_HOME_TO_MIN
-    #define X_MAX_PIN                E0_DIAG_PIN  // E0DET
+    #define X_MAX_PIN                 X_DIAG_PIN  // E0DET
   #else
-    #define X_MIN_PIN                E0_DIAG_PIN  // E0DET
+    #define X_MIN_PIN                 X_DIAG_PIN  // E0DET
   #endif
 #elif ANY(DUAL_X_CARRIAGE, NEEDS_X_MINMAX)
   #ifndef X_MIN_PIN
@@ -102,9 +102,9 @@
 #ifdef Y_STALL_SENSITIVITY
   #define Y_STOP_PIN                  Y_DIAG_PIN
   #if Y_HOME_TO_MIN
-    #define Y_MAX_PIN                E1_DIAG_PIN  // E1DET
+    #define Y_MAX_PIN                 Y_DIAG_PIN  // E1DET
   #else
-    #define Y_MIN_PIN                E1_DIAG_PIN  // E1DET
+    #define Y_MIN_PIN                 Y_DIAG_PIN  // E1DET
   #endif
 #elif ENABLED(NEEDS_Y_MINMAX)
   #ifndef Y_MIN_PIN
@@ -120,9 +120,9 @@
 #ifdef Z_STALL_SENSITIVITY
   #define Z_STOP_PIN                  Z_DIAG_PIN
   #if Z_HOME_TO_MIN
-    #define Z_MAX_PIN                E2_DIAG_PIN  // PWRDET
+    #define Z_MAX_PIN                 Z_DIAG_PIN  // PWRDET
   #else
-    #define Z_MIN_PIN                E2_DIAG_PIN  // PWRDET
+    #define Z_MIN_PIN                 Z_DIAG_PIN  // PWRDET
   #endif
 #elif ENABLED(NEEDS_Z_MINMAX)
   #ifndef Z_MIN_PIN
@@ -138,9 +138,9 @@
 #ifdef I_STALL_SENSITIVITY
   #define I_STOP_PIN                  I_DIAG_PIN
   #if I_HOME_TO_MIN
-    #define I_MAX_PIN                E2_DIAG_PIN  // PWRDET
+    #define I_MAX_PIN                 I_DIAG_PIN  // PWRDET
   #else
-    #define I_MIN_PIN                E2_DIAG_PIN  // PWRDET
+    #define I_MIN_PIN                 I_DIAG_PIN  // PWRDET
   #endif
 #elif ENABLED(NEEDS_I_MINMAX)
   #ifndef I_MIN_PIN
@@ -156,9 +156,9 @@
 #ifdef J_STALL_SENSITIVITY
   #define J_STOP_PIN                  J_DIAG_PIN
   #if J_HOME_TO_MIN
-    #define J_MAX_PIN                E2_DIAG_PIN  // PWRDET
+    #define J_MAX_PIN                 J_DIAG_PIN  // PWRDET
   #else
-    #define J_MIN_PIN                E2_DIAG_PIN  // PWRDET
+    #define J_MIN_PIN                 J_DIAG_PIN  // PWRDET
   #endif
 #elif ENABLED(NEEDS_J_MINMAX)
   #ifndef J_MIN_PIN
@@ -174,9 +174,9 @@
 #ifdef K_STALL_SENSITIVITY
   #define K_STOP_PIN                  K_DIAG_PIN
   #if K_HOME_TO_MIN
-    #define K_MAX_PIN                E2_DIAG_PIN  // PWRDET
+    #define K_MAX_PIN                 K_DIAG_PIN  // PWRDET
   #else
-    #define K_MIN_PIN                E2_DIAG_PIN  // PWRDET
+    #define K_MIN_PIN                 K_DIAG_PIN  // PWRDET
   #endif
 #elif ENABLED(NEEDS_K_MINMAX)
   #ifndef K_MIN_PIN
@@ -192,9 +192,9 @@
 #ifdef U_STALL_SENSITIVITY
   #define U_STOP_PIN                  U_DIAG_PIN
   #if U_HOME_TO_MIN
-    #define U_MAX_PIN                E2_DIAG_PIN  // PWRDET
+    #define U_MAX_PIN                 U_DIAG_PIN  // PWRDET
   #else
-    #define U_MIN_PIN                E2_DIAG_PIN  // PWRDET
+    #define U_MIN_PIN                 U_DIAG_PIN  // PWRDET
   #endif
 #elif ENABLED(NEEDS_U_MINMAX)
   #ifndef U_MIN_PIN
@@ -210,9 +210,9 @@
 #ifdef V_STALL_SENSITIVITY
   #define V_STOP_PIN                  V_DIAG_PIN
   #if V_HOME_TO_MIN
-    #define V_MAX_PIN                E2_DIAG_PIN  // PWRDET
+    #define V_MAX_PIN                 V_DIAG_PIN  // PWRDET
   #else
-    #define V_MIN_PIN                E2_DIAG_PIN  // PWRDET
+    #define V_MIN_PIN                 V_DIAG_PIN  // PWRDET
   #endif
 #elif ENABLED(NEEDS_V_MINMAX)
   #ifndef V_MIN_PIN
